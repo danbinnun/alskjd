@@ -2,7 +2,7 @@ name: Python Style Checker
 
 on:
   pull_request:
-  
+    branches: main
 
 jobs:
   python-style-checker:
