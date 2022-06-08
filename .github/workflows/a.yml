@@ -2,14 +2,14 @@ name: Python Style Checker
 
 on:
   pull_request:
-    branches: main
+    branches: master
     types: [ opened, reopened, synchronize ]
     paths: [ '**.py' ]
 
 jobs:
   python-style-checker:
     name: Check pull request Python Style Checker
-    runs-on: [ ubuntu-lastest ]
+    runs-on: [ self-hosted, Linux ]
     steps:
       - uses: actions/checkout@v3
       - name: Python Style Checker
